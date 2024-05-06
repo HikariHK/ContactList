@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(150, 150, 150);
+    font-family: "Signika", sans-serif;
+}
+
+main{
+    height: 100vh;
+    background-color: rgb(65, 86, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.main-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container{
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    height: 300px;
+}
+
+.contacts{
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-icons{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.contact-5star-img{
+    margin: 0;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact-5star-img img{
+    width: 100px;
+    height: auto;
+    background-color: black;
+    border-radius: 80px;
+}
+
+.contact-info{
+    width: 100%;
+    align-items: flex-start;
+    margin: 0;
+    background-color: aqua;
+    text-align: left;
+    padding: 10px 60px 0px 0px;
+}
+
+.contact-icons span{
+    padding: 2px;
+}
+
