@@ -7,8 +7,12 @@ body{
 }
 
 main{
-    height: 100vh;
+    background-image: url(/imgs/background.jpg);
+    background-size: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
     background-color: rgb(65, 86, 104);
+    height: 100vh; /* Usando quando se tem apenas um elemento */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,14 +20,15 @@ main{
 }
 
 .main-container{
+    box-shadow: 5px 5px 5px rgba(253, 253, 253, 0.726);
+    background-color: rgba(255, 255, 255, 0.13);
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    box-shadow: 2px 2px 2px black;
+    padding: 40px;
+    backdrop-filter: blur(5px);
 }
 
 .main-container h1{
+    color: rgb(241, 241, 241);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -37,6 +42,7 @@ main{
     align-items: center;
     overflow: auto;
     height: 300px;
+    border-radius: 5px;
 }
 
 .contacts{
@@ -55,6 +61,7 @@ main{
 }
 
 .contact-5star-img{
+    background-color: aquamarine;
     margin: 0;
     padding: 10px;
     display: block;
@@ -75,6 +82,10 @@ main{
     background-color: aqua;
     text-align: left;
     padding: 10px 60px 0px 0px;
+}
+
+.contact-icons{
+    background-color: brown;
 }
 
 .contact-icons span{
