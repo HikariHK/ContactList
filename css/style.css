@@ -36,11 +36,11 @@ main{
 .contact-container{
     flex-direction: column;
     display: flex;
-    margin: 0;
     text-align: center;
     justify-content: space-between;
     align-items: center;
     overflow: auto;
+    margin: 0;
     height: 300px;
     border-radius: 5px;
 }
@@ -61,7 +61,6 @@ main{
 }
 
 .contact-5star-img{
-    background-color: aquamarine;
     margin: 0;
     padding: 10px;
     display: block;
@@ -71,7 +70,21 @@ main{
 .contact-5star-img img{
     width: 100px;
     height: auto;
-    background-color: black;
+    background: linear-gradient(140deg, #c67c28 16%, #755530 92%);
+    border-radius: 80px;
+}
+
+.contact-4star-img{
+    margin: 0;
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact-4star-img img{
+    width: 100px;
+    height: auto;
+    background: linear-gradient(140deg, #7049a2 16%, #2f2457 92%);
     border-radius: 80px;
 }
 
@@ -79,13 +92,16 @@ main{
     width: 100%;
     align-items: flex-start;
     margin: 0;
-    background-color: aqua;
     text-align: left;
     padding: 10px 60px 0px 0px;
 }
 
+.contact-info p{
+    color: #7e7e7e;
+}
+
 .contact-icons{
-    background-color: brown;
+    padding: 5px;
 }
 
 .contact-icons span{
