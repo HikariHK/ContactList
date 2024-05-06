@@ -1,6 +1,33 @@
 *{
     margin: 0;
 }
+
+/*
+
+Segunda opção de centralização vertical
+
+html{
+    height: 100%;
+    
+}
+
+body{
+    background-color: rgb(150, 150, 150);
+    font-family: "Signika", sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/imgs/background.jpg);
+    background-size: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: rgb(65, 86, 104);
+}
+*/
+
+
 body{
     background-color: rgb(150, 150, 150);
     font-family: "Signika", sans-serif;
@@ -33,7 +60,14 @@ main{
     margin-bottom: 20px;
 }
 
+.main-container ul{
+    list-style: none;
+}
+
 .contact-container{
+    padding-left: 0;
+    list-style: none;
+    border-radius: 5px;
     flex-direction: column;
     display: flex;
     text-align: center;
@@ -42,7 +76,6 @@ main{
     overflow: auto;
     margin: 0;
     height: 300px;
-    border-radius: 5px;
 }
 
 .contacts{
@@ -58,6 +91,7 @@ main{
 .contacts:hover{
     background-color: rgba(240, 248, 255, 0.582);
 }
+
 
 .contact-icons{
     display: flex;
@@ -107,6 +141,10 @@ main{
 
 .contact-icons{
     padding: 5px;
+}
+
+.contact-icons a{
+    color: black;
 }
 
 .contact-icons span{
