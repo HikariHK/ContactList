@@ -34,20 +34,21 @@ body{
 }
 
 main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-image: url(/imgs/background.jpg);
     background-size: 100%;
     background-position: right center;
     background-repeat: no-repeat;
     background-color: rgb(65, 86, 104);
     height: 100vh; /* Usando quando se tem apenas um elemento */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
+/*  Style for main-container div  */
+
 .main-container{
-    box-shadow: 5px 5px 5px rgba(253, 253, 253, 0.726);
     background-color: rgba(255, 255, 255, 0.13);
     border-radius: 10px;
     padding: 40px;
@@ -55,8 +56,8 @@ main{
 }
 
 .main-container h1{
-    color: rgb(241, 241, 241);
     text-align: center;
+    color: rgb(241, 241, 241);
     margin-bottom: 20px;
 }
 
@@ -64,27 +65,34 @@ main{
     list-style: none;
 }
 
+/*  Style for contact-container div  */
+
 .contact-container{
-    padding-left: 0;
+    list-style-type: none;
     list-style: none;
-    border-radius: 5px;
     flex-direction: column;
     display: flex;
     text-align: center;
     justify-content: space-between;
     align-items: center;
     overflow: auto;
+    border-radius: 5px;
+    padding-left: 0;
     margin: 0;
     height: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0, .2);
 }
+
+/*  Style for contacts div  */
 
 .contacts{
     justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #eeeeee93;
     margin: 0;
     width: 100%;
     background-color: rgba(240, 248, 255, 0.349);
-    display: flex;
-    flex-direction: row;
     transition: ease-in-out 250ms;
 }
 
@@ -93,17 +101,13 @@ main{
 }
 
 
-.contact-icons{
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
+/*  Style for contact-5star-img and contact-4star-img div  */
 
 .contact-5star-img{
-    margin: 0;
-    padding: 10px;
     display: block;
     text-align: left;
+    margin: 0;
+    padding: 10px;
 }
 
 .contact-5star-img img{
@@ -114,37 +118,50 @@ main{
 }
 
 .contact-4star-img{
-    margin: 0;
-    padding: 10px;
     display: block;
     text-align: left;
+    margin: 0;
+    padding: 10px;
 }
 
 .contact-4star-img img{
     width: 100px;
     height: auto;
     background: linear-gradient(140deg, #7049a2 16%, #2f2457 92%);
-    border-radius: 80px;
+    border-radius: 50%;
 }
 
+/*  Style for contact-info div  */
+
 .contact-info{
-    width: 100%;
     align-items: flex-start;
-    margin: 0;
     text-align: left;
-    padding: 10px 60px 0px 0px;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0px 0px 0px;
 }
 
 .contact-info p{
     color: #222222;
 }
 
+/*  Style for contact-icons div  */
+
 .contact-icons{
-    padding: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 6px;
 }
 
 .contact-icons a{
-    color: black;
+    color: rgba(0, 0, 0, 0);
+    transition: ease-in-out 250ms;
+}
+
+
+.contacts:hover .contact-icons a{
+    color: rgb(0, 0, 0);
 }
 
 .contact-icons span{
